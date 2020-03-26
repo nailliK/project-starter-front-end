@@ -1,0 +1,25 @@
+{
+  "name": "project-starter-front-end",
+  "version": "1.0.0",
+  "description": "Basic Front-End Project Starter",
+  "main": "index.js",
+  "repository": "git@github.com:nailliK/project-starter-front-end.git",
+  "author": "Killian Grant",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@vue/component-compiler-utils": "^3.1.1",
+    "@vue/composition-api": "^0.5.0",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.3",
+    "typescript": "^3.8.3",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.1.6",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  }
+}
