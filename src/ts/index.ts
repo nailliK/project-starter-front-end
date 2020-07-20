@@ -1,5 +1,3 @@
-// Import SCSS index file to be included in compiling
-import "~/scss/index.scss";
 // Import NPM libraries
 import Vue from "vue";
 import VueCompositionApi from "@vue/composition-api";

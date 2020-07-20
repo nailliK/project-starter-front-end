@@ -1,3 +1,9 @@
-*, *:before, *:after {
-	box-sizing: border-box;
-}
+@import "lib/grid";
+@import "lib/font-face";
+@import "lib/color";
+
+@import "config";
+
+@import "components/base";
+@import "components/fonts";
+@import "components/typography";

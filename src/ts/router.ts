@@ -4,7 +4,7 @@ import Home from "~vue/views/Home.vue";
 
 Vue.use(VueRouter);
 
-const router:VueRouter = new VueRouter({
+const router: VueRouter = new VueRouter({
 	mode: "history",
 	routes: [
 		{

@@ -1,17 +1,23 @@
 <template>
-	<div>
-		<h2>First And Last Name</h2>
-		<p>Hi, {{ firstName }} {{ lastName }}</p>
+	<main>
+		<h1>Front End Starter</h1>
 
-		<h2>Full Name Child Component</h2>
-		<FullName :fullName="fullName"></FullName>
-	</div>
+		<section>
+			<h2>First And Last Name</h2>
+			<p>Hi, {{ firstName }} {{ lastName }}</p>
+		</section>
+
+		<section>
+			<h2>Full Name Child Component</h2>
+			<full-name :first-name="firstName"
+			           :last-name="lastName"></full-name>
+		</section>
+	</main>
 </template>
 
 <script lang="ts">
 	// Import NPM libraries
-	import {computed, defineComponent, ref, Ref} from "@vue/composition-api";
-
+	import {defineComponent, ref, Ref} from "@vue/composition-api";
 	// Import child components
 	import FullName from "~/vue/components/FullName.vue";
 
@@ -21,21 +27,15 @@
 			FullName
 		},
 		props: {},
-		setup(props) {
+		setup(props: any) {
 			// Declare reactive properties
 			const firstName: Ref<string> = ref("John");
 			const lastName: Ref<string> = ref("Smith");
 
-			// Declare computed properties
-			const fullName: any = computed((): any => {
-				return `${firstName.value}  ${lastName.value}`;
-			});
-
 			// Return properties to template
 			return {
 				firstName,
-				lastName,
-				fullName
+				lastName
 			};
 		}
 	});

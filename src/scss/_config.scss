@@ -1,0 +1,28 @@
+// Global Measurements
+$font-size: 1rem;
+$line-height: 1.5 * $font-size;
+
+// Grid Configuration
+$grid-type: fluid;
+$grid-gutter: $line-height;
+$grid-padding: false;
+$container-padding: false;
+
+// Breakpoints
+$grid-breakpoints: (
+	tablet: 40rem,
+	desktop: 60rem
+);
+
+// Colors
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+$blue: rgba(0, 0, 255, 1);
+
+$color-primary: $blue;
+$color-text: $black;
+$color-background: $white;
+
+// Fonts
+$font-primary: serif;
+$font-secondary: sans-serif;
